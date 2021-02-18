@@ -1,0 +1,79 @@
+.carousel-root .root {
+  text-align: center;
+}
+
+.carousel-root .carousel-container {
+  position: relative;
+  display: flex;
+  min-height: 100px;
+}
+
+.carousel-root .block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-root .block-title-container {
+  position: absolute;
+  bottom: 20px;
+}
+
+.carousel-root .block-title {
+  background: rgba(255,255,255, 0.4);
+  width: max-content;
+  padding: 3px 15px;
+}
+
+.carousel-root .block-img-container {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  height: -moz-available;
+}
+
+.carousel-root .block-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-root .arrow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+}
+
+.carousel-root .arrow button{
+  font-size: 45px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-root .arrow-left {
+  left: 0;
+}
+
+.carousel-root .arrow-right {
+  right: 0;
+}
+
+.carousel-indicator-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicator {
+  margin: 10px 3px;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background: #000;
+  border-radius: 50%;
+}
